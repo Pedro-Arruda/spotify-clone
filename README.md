@@ -11,6 +11,12 @@
 </h2>
 <img src="img/spotify.gif" alt="Demonstração do projeto">
 
+<div>
+	<img src = "img/responsivo1.png" width="420px">
+	<img src = "img/responsivo2.png" width="302px">
+	<img src = "img/responsivo3.png" width="197px">
+</div>
+
 <h2> 
 	 🛠 Tecnologias
 </h2>
