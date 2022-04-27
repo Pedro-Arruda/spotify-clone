@@ -1,6 +1,6 @@
-<h1 align="center">Nutricionista</h1>
+<h1 align="center">Clone Spotify</h1>
 
-<h5 align= "center">( https://pedro-arruda.github.io/spotify/ )</h5>
+<h5 align= "center">( https://pedro-arruda.github.io/clone-spotify/ )</h5>
 
 <h2 align="center"> 
 	Concluído 🟢
