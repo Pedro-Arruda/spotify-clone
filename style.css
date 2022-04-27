@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #141414;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(163, 162, 162);
+}
+
+ul, li {
+    list-style: none;
+}
+
+.container {
+    width: 84%;
+    margin-left: 270px;
+}
+
+/*ASIDE*/
+
+aside {
+    background-color: #000;
+    width: 238px;
+    height: 100%;
+    float: left;
+    position: fixed;
+}
+
+aside #logo {
+    width: 130px;
+    margin: 30px 5px;
+}
+.menu-lateral {
+    padding: 15px;
+}
+
+.menu-lateral li{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.menu-lateral a {
+    font-size: 18px;
+}
+
+.menu-lateral a:hover {
+    color: #fff;
+    transition: 0.7s;
+}
+
+.menu-lateral i {
+    color: gray;
+    margin-right: 10px;
+}
+
+.icon-plus {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.icon-heart {
+    background: linear-gradient(90deg, rgba(122,120,168,1) 10%, rgba(84,80,173,1) 36%, rgba(80,76,174,1) 100%, rgba(44,44,133,1) 100%, rgba(62,62,167,1) 100%, rgba(255,255,255,1) 100%);
+    padding: 5px;
+    color: #fff;
+}
+
+/*TOPO*/
+
+
+h1 {
+    padding: 40px 0;
+    font-size: 30px;
+}
+
+.area-musicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+    grid-template-rows: repeat(2, 10vh);
+    grid-gap: 15px;
+}
+
+.area-musicas img {
+    width: 30%;
+    display: inline;
+    height: 100%;
+    
+}
+
+.area-musicas span {
+    display: inline;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+.area-musicas div {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    cursor: pointer;
+    width: 83.5%;
+}
+
+.area-musicas div:hover {
+    opacity: 0.6;
+}
+
+/*TOCADAS RECENTES*/
+
+.area-recentes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    margin-right: 50px;
+
+}
+
+.area-recentes div {
+    background-color: #202020;
+    height: 320px;
+    cursor: pointer;
+    width: 93%;
+}
+
+.area-recentes div:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+.area-recentes img {
+    border-radius: 25px;
+    height: 200px;
+    display: inline;
+    width: 88%;
+    margin: 10px 15px;
+    padding: 5px;
+}
+
+.area-recentes h3 {
+    margin: 10px 0px 5px 25px;
+}
+
+.area-recentes span {
+    color: rgb(163, 162, 162);
+    margin-left: 25px;
+}
+
+#play-pause {
+    margin-left: 300px; 
+}
+
+/*ARTISTAS*/
+
+#img-artistas {
+    border-radius: 200px;
+    height: 165px;
+    display: inline;
+    width: 70%;
+    margin: 20px 40px;
+}
+
+#melhor-cada-artista {
+    margin-bottom: 150px;
+}
+
+
+/******************/
+
+.musica-atual {
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(44, 44, 44);
+}
+
+.musica-atual div {
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.musica-atual h3{
+    display: block;
+}
+.musica-atual span {
+    color: rgb(163, 162, 162);
+    display: block;
+}
+
+.musica-atual i{
+    font-size: 25px;
+    margin-left: 100px;
+}
+
+.barra-progresso {
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    background-color: rgb(130, 130, 130);
+    display: inline-block;
+}
+
+.barra-progresso2 {
+    position: absolute;
+    height: 7px;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 80%;
+}
+
+#play i{
+    cursor: pointer;
+}
+
+#pause i{
+    cursor: pointer;
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width:1850px) {
+    .area-recentes {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .area-recentes div:nth-child(6) {
+        display: none;
+    }
+
+    .container {
+        width: 83%;
+    }   
+
+    .area-musicas {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    .area-musicas div:nth-child(7) {
+        display: none;
+    }
+    .area-musicas div:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .area-recentes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .area-recentes div:nth-child(5) {
+        display: none;
+    }
+
+    .area-recentes h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 76%;
+    }   
+
+    .area-musicas div:nth-child(4) {
+        display: none;
+    }
+    .area-musicas div:nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:1130px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 74%;
+    }
+    .area-recentes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .area-recentes div:nth-child(3) {
+        display: none;
+    }
+
+    .area-recentes div:nth-child(4) {
+        display: none;
+    }
+
+    .area-musicas {
+        grid-template-columns: 1fr;
+    }
+
+    .area-musicas div:nth-child(2) {
+        display: none;
+    }
+    .area-musicas div:nth-child(8) {
+        display: none;
+    }
+
+    .container {
+        width: 65%;
+    }   
+}
+
+@media screen and (max-width:740px) {
+    .area-recentes div:nth-child(1) {
+        display: none;
+    }
+    .area-recentes div:nth-child(2) {
+        width: 220px;
+    }
+}
